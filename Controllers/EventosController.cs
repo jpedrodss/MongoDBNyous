@@ -14,9 +14,9 @@ namespace MongoDBNyous.Controllers
     [ApiController]
     public class EventosController : ControllerBase
     {
-        private readonly IEventoRepository _eventoRepository;
+        private readonly EventoRepository _eventoRepository;
 
-        public EventosController(IEventoRepository eventoRepository)
+        public EventosController(EventoRepository eventoRepository)
         {
             _eventoRepository = eventoRepository;
         }
